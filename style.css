@@ -36,8 +36,16 @@ nav button:hover{
     margin: 20px;
 }
 /* Content */
+.content-container{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    height: 200px;
+    margin-top: -100px; /* half of height */
+    width: 400px;
+    margin-left: -200px; /* half of width */
+}
 #centered{
-    display: inline-block;
     display: flex;
     width: 100%;
     align-items: center;
@@ -45,12 +53,11 @@ nav button:hover{
 }
 .centered-img{
     background-color: white;
-    padding-top: 5%;
     margin-bottom: 25px;
 }
 .input_container{
     background-color: white;
-    width: 500px;
+    width: 600px;
     height: 40px;
     border-radius: 30px;
     border: .1px solid rgba(0, 0, 0, 0.137);
@@ -58,10 +65,51 @@ nav button:hover{
     justify-content: center;
 }
 div input{
-    width: 400px;
+    margin: 0px 40px 0px 40px;
+    width: 500px;
     border:none;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
+    background-color: white;
 }
+/* Footer */
+footer {
+    position: absolute;
+    height: 40px;
+    width: 100%;
+    background-color: rgba(241, 241, 241, 0.397);
+    bottom: 0px;
 
-
+}
+.rcl{
+    margin-left: 50px;
+    padding: 10px;
+    float: left;
+}
+.rcl a{
+    font-size: 14px;
+    margin:0px 20px 0px 20px;
+    color: rgba(0, 0, 0, 0.932);
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.rcr{
+    margin-right: 50px;
+    padding: 10px;
+    float: right;
+}
+.rcr a{
+    font-size: 14px;
+    margin:0px 20px 0px 20px;
+    color: rgba(0, 0, 0, 0.932);
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.rcl a:hover{
+    text-decoration: underline;
+    color: rgba(0, 0, 0, 0.788);
+}
+.rcr a:hover{
+    text-decoration: underline;
+    color: rgba(0, 0, 0, 0.788);
+}
