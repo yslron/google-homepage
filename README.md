@@ -1,5 +1,7 @@
 # google-homepage
 This is an odin project
+Web Release
+https://yslron.github.io/google-homepage/
 
 For the navigation 
     Contains
