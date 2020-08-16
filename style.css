@@ -5,6 +5,7 @@ body{
     padding: 0px;
     margin: 0px;
 }
+/* Navigation */
 nav{
     float: right;
 }
@@ -34,3 +35,33 @@ nav button:hover{
 .nav-bar{
     margin: 20px;
 }
+/* Content */
+#centered{
+    display: inline-block;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.centered-img{
+    background-color: white;
+    padding-top: 5%;
+    margin-bottom: 25px;
+}
+.input_container{
+    background-color: white;
+    width: 500px;
+    height: 40px;
+    border-radius: 30px;
+    border: .1px solid rgba(0, 0, 0, 0.137);
+    display: flex;
+    justify-content: center;
+}
+div input{
+    width: 400px;
+    border:none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+
