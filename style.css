@@ -45,7 +45,7 @@ nav button:hover{
     width: 400px;
     margin-left: -200px; /* half of width */
 }
-#centered{
+.centered{
     display: flex;
     width: 100%;
     align-items: center;
@@ -53,14 +53,14 @@ nav button:hover{
 }
 .centered-img{
     background-color: white;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
 }
 .input_container{
     background-color: white;
     width: 600px;
     height: 40px;
     border-radius: 30px;
-    border: .1px solid rgba(0, 0, 0, 0.137);
+    border: 1px solid rgba(0, 0, 0, 0.137);
     display: flex;
     justify-content: center;
 }
@@ -70,7 +70,7 @@ div input{
     border:none;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0);
 }
 /* Footer */
 footer {
