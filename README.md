@@ -10,3 +10,7 @@ For Content
     Contains
         `Image -Google
         `Input -inputbox
+
+For Footer
+    Contains
+        `Links -Advertising,Business,About,Privacy,Terms,Settings
