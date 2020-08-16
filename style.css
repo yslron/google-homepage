@@ -1,0 +1,36 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    padding: 0px;
+    margin: 0px;
+}
+nav{
+    float: right;
+}
+nav a{
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    text-decoration-line: none;
+    margin: 0px 10px 0px 10px;
+}
+nav a:hover{
+    text-decoration-line: underline;
+    color: rgba(0, 0, 0, 0.863);
+}
+nav button{
+    background-color: rgb(17, 91, 252);
+    color: white;
+    font-size: 12px;
+    padding: 8px 13px 8px 13px;
+    text-decoration: none;
+    border:none;
+    border-radius: 3px;
+}
+nav button:hover{
+    background-color: rgb(49, 113, 252);
+}
+.nav-bar{
+    margin: 20px;
+}
