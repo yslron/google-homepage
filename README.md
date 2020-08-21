@@ -1,18 +1,11 @@
-# google-homepage
-This is an odin project
-Web Release
-https://yslron.github.io/google-homepage/
+#Web-Portfolio-Project v0.2
 
-For the navigation 
-    Contains
-       `Link -Gmail,Images 
-       `Button -Sign in 
+My web portfolio for Web Development Project
 
-For Content
-    Contains
-        `Image -Google
-        `Input -inputbox
-
-For Footer
-    Contains
-        `Links -Advertising,Business,About,Privacy,Terms,Settings
+0.1
+    -nav
+    -header
+0.2 
+    -content
+    -desktop responsive
+    -animations

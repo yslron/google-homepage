@@ -1,48 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Google</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Portfolio</title>
 </head>
-<body>
-    <nav class="nav-bar">
-        <a href="#">Gmail</a>
-        <a href="#">Images</a>
-        <a href="#"><button><b>Sign in</b></button></a>
-    </nav>
-    <div class="content-container">
-        <div class="centered centered-img">
-            <img src="images/Googlelogo.png" alt="">
-        </div>
-        <div class="centered" >
-            <div class="input_container">
-                <input type="search" name="Searchbox" id="">
-            </div>
-        </div>
-        <div class="centered">
-            <button>
-                <h4>Google Search</h4>
-            </button>
-            <button>
-                <h4>I'm Feeling Lucky</h4>
-            </button>
-        </div>
-    </div>
-    <footer>
-        <div class="rcl">
-            <a href="#">Advertising</a>
-            <a href="#">Business</a>
-            <a href="#">About</a>
-        </div>
-        <div class="rcr">
-            <a href="#">Privacy</a>
-            <a href="#">Terms</a>
-            <a href="#">Settings</a>
-        </div>
-    </footer>
-    
 
+<body>
+    <div class="bg"></div>
+    <header>
+        <nav class="nav--wrapper">
+            <div class="logo">
+                <h1>
+                    Ysl
+                    <h1 class="logo--ext">Ron</h1>
+                </h1>
+            </div>
+            <div class="links" id="anim">
+                <ul class="main-nav">
+                    <li><a class="nav-links" href="#">Home</a></li>
+                    <li><a class="nav-links" href="#">About</a></li>
+                    <li><a class="nav-links" href="#">Portfolio</a></li>
+                    <li><a class="nav-links" href="#">Blog</a></li>
+                </ul>
+            </div>
+            <div class="button button--cnt">
+                <button>
+                    Contact
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <section id="content">
+        <div class="container-body">
+            <section id="cont-1">
+                <div class="context">
+                    <div class="content-p transition1">
+                        <p>Hello, I'm</p>
+                        <h1>Ysl Ron Hepos</h1>
+                        <p>Font End Web Developer</p>
+                        <button class="button1" id="gb5">About Me</button>
+                    </div>
+                    <div class="social-icons">
+                        <!--<h4>Find Me on</h4>-->
+                        <a href="https://www.facebook.com/Ysl.Ron.hepos1/"><img src="./images/f.png" alt=""></a>
+                        <a href="https://twitter.com/yslron1"><img src="./images/twit.png" alt=""></a>
+                        <a href="https://www.instagram.com/yslron/"><img src="./images/inst.png" alt=""></a>
+                        <a href="https://github.com/yslron"><img src="./images/git.png" alt=""></a>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <img class="pfp" src="./images/web.png" alt="Face">
+        <div class="extention"></div>
 </body>
+
 </html>
