@@ -18,7 +18,7 @@ body {
     /*using cssgradient.io for liniar background generator*/
     background: linear-gradient(90deg, rgb(250, 250, 250) 13%, rgba(255, 255, 255, 1) 13%, rgba(247, 247, 247, 1) 13%, rgba(247, 247, 247, 1) 16%, rgba(255, 255, 255, 1) 16%, rgba(252, 252, 252, 1) 16%);
     overflow-x: hidden;
-    overflow-y: show;
+    overflow-y: visible;
     /* Hide vertical scrollbar */
 }
 
@@ -116,6 +116,7 @@ body {
     margin-left: -40px;
 
 }
+
 .main-nav li {
     margin: 15px auto;
     text-align: left;
@@ -224,9 +225,8 @@ body {
 
 .social-icons img {
     filter: brightness(0%);
-    margin-right: 20px;
-    margin: 0;
-    opacity: 80%;
+    margin: 0px 14px 0px 0px;
+    opacity: .8;
     width: 25px;
 }
 
@@ -239,13 +239,15 @@ body {
 
 .social-icons img:hover {
     cursor: pointer;
-    opacity: 100%;
+    opacity: 1;
 }
 
 .extention {
-    height: 40px;
+
     width: 100%;
+    text-align: center;
 }
+
 
 /*static bg*/
 .pfp {
@@ -253,7 +255,7 @@ body {
     top: 640px;
     right: auto;
     position: absolute;
-    left:60%;
+    left: 60%;
     filter: brightness(120%);
 }
 
@@ -269,10 +271,140 @@ body {
     z-index: -3;
 }
 
+.extention h1 {
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+.proj-container{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+.border-wrap {
+    position: relative;
+    background: rgba(233, 15, 15, 0.705);
+    background: linear-gradient(51deg, rgba(255, 2, 2, 0.267) 30%, rgba(246, 246, 246, 1) 30%, rgba(255, 255, 255, 1) 54%, rgba(255, 255, 255, 1) 70%, rgba(255, 0, 0, 0.562) 70%);
+    padding: 3px;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 0px 19px 15px rgba(0,0,0,0.02); 
+box-shadow: 0px 0px 19px 15px rgba(0,0,0,0.01);
+    transition: ease .5s;
+    margin-bottom: 70px;
+}
+.border-wrap:hover{
+    background-color: rgb(255, 0, 0);
+}
+
+.projects {
+
+    width: 100%;
+    height: 300px;
+    background-color: rgba(255, 255, 255, 0);
+    padding: 0px 0px 20px 0px;
+ 
+}
+
+.proj-container {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
+    margin: 50px;
+    transition: none;
+}
+
+.proj-content {
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 400px;
+    padding: 15px 10px 10px 15px;
+    margin-left: 0px;
+    margin-right: 0px;
+    transition: none;
+}
+.proj-content:hover {
+    width: 100%;
+    height: 400px;
+
+    margin-left: 0px;
+    margin-right: 0px;
+}
+.f-l{
+    font-weight: lighter;
+}
+footer{
+    height: 35px;
+    bottom: 0px;
+    display: flex;
+    justify-content: center;
+}
+footer div h3{
+    color: rgba(0, 0, 0, 0.13);
+}
+
 /*Media Queries*/
 @media all and (max-width:375px) {
     .pfp {
-        opacity: 0;
+        opacity:0;
+    }
+
+    .extention h1 {
+        font-weight: 500;
+    }
+    
+    .border-wrap {
+        position: relative;
+        background: rgba(233, 15, 15, 0.705);
+        background: linear-gradient(51deg, rgba(255, 2, 2, 0.267) 30%, rgba(246, 246, 246, 1) 30%, rgba(255, 255, 255, 1) 54%, rgba(255, 255, 255, 1) 70%, rgba(255, 0, 0, 0.562) 70%);
+        padding: 3px;
+        border-radius: 10px;
+        -webkit-box-shadow: 0px 0px 19px 15px rgba(0,0,0,0.02); 
+box-shadow: 0px 0px 19px 15px rgba(0,0,0,0.01);
+
+    }
+    .border-wrap:hover{
+        background-color: rgb(255, 0, 0);
+    }
+
+    .projects {
+        width: 100%;
+        height: 300px;
+        background-color: rgba(255, 255, 255, 0);
+        padding: 0px 0px 20px 0px;
+     
+    }
+
+    .proj-container {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .proj-content {
+        border-radius: 10px;
+        background-color: rgb(255, 255, 255);
+        width: 360px;
+        height: 250px;
+        padding: 15px 10px 10px 15px;
+        transition: ease .2s;
+    }
+    .proj-content:hover {
+        width: 359.5px;
+        height: 249.5px;
+        margin:1.5px;
+    }
+    .f-l{
+        font-weight: lighter;
+    }
+    footer{
+        height: 35px;
+        bottom: 0px;
+        display: flex;
+        justify-content: center;
+    }
+    footer div h3{
+        color: rgba(0, 0, 0, 0.13);
     }
 }
 
@@ -295,6 +427,59 @@ body {
         transition: 1s;
         opacity: 0;
     }
+
+    .extention h1 {
+        font-weight: 500;
+    }
+    
+    .border-wrap {
+        position: relative;
+        background: rgba(233, 15, 15, 0.705);
+        background: linear-gradient(51deg, rgba(255, 2, 2, 0.267) 30%, rgba(246, 246, 246, 1) 30%, rgba(255, 255, 255, 1) 54%, rgba(255, 255, 255, 1) 70%, rgba(255, 0, 0, 0.562) 70%);
+        padding: 3px;
+        border-radius: 10px;
+        -webkit-box-shadow: 0px 0px 19px 15px rgba(0,0,0,0.02); 
+box-shadow: 0px 0px 19px 15px rgba(0,0,0,0.01);
+        transition: ease .5s;
+    }
+    .border-wrap:hover{
+        background-color: rgb(255, 0, 0);
+    }
+
+    .projects {
+        width: 100%;
+        height: 300px;
+        background-color: rgba(255, 255, 255, 0);
+        padding: 0px 0px 20px 0px;
+     
+    }
+
+    .proj-container {
+        display: flex;
+        justify-content: space-evenly;
+        transition: none;
+    }
+
+    .proj-content {
+        border-radius: 10px;
+        background-color: rgb(255, 255, 255);
+        width: 100%;
+        height: 250px;
+        padding: 15px 10px 10px 15px;
+        transition: ease .2s;
+    }
+    .proj-content:hover {
+        width: 100%;
+        height: 250px;
+        margin:0px;
+    }
+    .f-l{
+        font-weight: lighter;
+    }
+
+    footer div h3{
+        color: rgba(0, 0, 0, 0.13);
+    }
 }
 
 @media all and (min-width: 1100px) {
@@ -306,8 +491,18 @@ body {
         padding: 0;
     }
 
+    .extention {
+   
+        width: 100%;
+        text-align: center;
+    }
+
+    .extention h1 {
+        font-weight: 500;
+    }
+
     body {
-        overflow-y: show;
+        overflow-y: visible;
         overflow-x: hidden;
     }
 
@@ -407,20 +602,18 @@ body {
     }
 
     .social-icons {
-        display: inherit;
         margin: 20px 0px 0px 0px;
     }
 
     .social-icons img {
         filter: brightness(0%);
-        margin-right: 20px;
-        margin: 0;
-        opacity: 80%;
+        margin: 0px 18px 0px 0px;
+        opacity: .8;
         width: 25px;
     }
 
     .social-icons h4 {
-        color: rgba(0, 0, 0, 0.829);
+        color: rgba(110, 40, 40, 0.829);
         font-size: 1.5rem;
         font-weight: bold;
         margin-top: 10px;
@@ -428,8 +621,7 @@ body {
 
     .social-icons img:hover {
         cursor: pointer;
-        opacity: 100%;
-
+        opacity: 1;
     }
 
     .context {
@@ -459,5 +651,65 @@ body {
         font-weight: bold;
         margin-top: -10px;
     }
+    .extention h1{
+        padding: 10px;
+    }
+    .border-wrap {
+        position: relative;
+        background: rgba(233, 15, 15, 0.705);
+        background: linear-gradient(51deg, rgba(255, 2, 2, 0.267) 30%, rgba(246, 246, 246, 1) 30%, rgba(255, 255, 255, 1) 54%, rgba(255, 255, 255, 1) 70%, rgba(255, 0, 0, 0.562) 70%);
+        padding: 3px;
+        border-radius: 10px;
+        -webkit-box-shadow: 0px 0px 19px 15px rgba(0,0,0,0.02); 
+box-shadow: 0px 0px 19px 15px rgba(0,0,0,0.01);
+        transition: ease .5s;
+    }
+    .border-wrap:hover{
+        background-color: rgb(255, 0, 0);
+    }
 
+    .projects {
+        width: 100%;
+        height: 300px;
+        background-color: rgba(255, 255, 255, 0);
+        padding: 20px 0px 20px 0px;
+     
+    }
+
+    .proj-container {
+        display: flex;
+        flex-flow: row;
+        justify-content: space-evenly;
+        margin: 0px;
+    }
+
+    .proj-content {
+        border-radius: 10px;
+        background-color: rgb(255, 255, 255);
+        width: 360px;
+        height: 250px;
+        padding: 15px 10px 10px 15px;
+        transition: ease .2s;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .proj-content:hover {
+        width: 359.5px;
+        height: 249.5px;
+        margin:1.5px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .f-l{
+        font-weight: lighter;
+    }
+    footer{
+        height: 35px;
+        bottom: 0px;
+        display: flex;
+        justify-content: center;
+    }
+    footer div h3{
+        color: rgba(0, 0, 0, 0.13);
+    }
 }

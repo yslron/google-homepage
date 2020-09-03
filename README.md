@@ -9,3 +9,8 @@ My web portfolio for Web Development Project
     -content
     -desktop responsive
     -animations
+
+0.3 
+    -Project Section
+
+#i might change it to color blue who knows.
